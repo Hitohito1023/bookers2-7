@@ -24,7 +24,7 @@
   <!--都道府県-->
   <div class="field">
     <%= f.label :prefecture_code %><br>
-    <%= f.collection_select :prefecture_code, JpPrefecture::Prefecture.all, :code, :name, { prompt: '北海道' }, class: 'prefecture_code' %>
+    <%= f.collection_select :prefecture_code, JpPrefecture::Prefecture.all, :code, :name, class: 'prefecture_code' %>
   </div>
 
   <!--市町村-->
